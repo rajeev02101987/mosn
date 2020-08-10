@@ -19,8 +19,6 @@ package shm
 
 import (
 	"log"
-	"runtime"
-	"sync"
 	"sync/atomic"
 	"testing"
 	"unsafe"
