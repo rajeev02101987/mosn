@@ -59,7 +59,7 @@ func TestAtomic(t *testing.T) {
 	}
 
 	wg.Wait()
-/*
+
 	if *counter != uint32(expected) {
 		t.Errorf("counter error, expected %d, actual %d", 10000, *counter)
 	}
@@ -67,7 +67,7 @@ func TestAtomic(t *testing.T) {
 	if err := Free(span); nil != err {
 		log.Fatalln(err)
 	}
-*/
+
 }
 
 func TestConsitency(t *testing.T) {
