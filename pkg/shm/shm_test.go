@@ -44,7 +44,7 @@ func TestAtomic(t *testing.T) {
 	block, err := span.Alloc(128)
 
 	counter := (*uint32)(unsafe.Pointer(block))
-	expected := 10000
+	expected := 9984
 	cpu := runtime.NumCPU()
 	wg := sync.WaitGroup{}
 
